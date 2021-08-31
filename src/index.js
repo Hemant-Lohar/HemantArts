@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './Components/Home';
+import Navbar from './Components/Navbar';
 import './index.css'
 
 
 ReactDOM.render(
   <>
-    <Home />
+    <Navbar />
   </>,
   document.getElementById('root')
 );
