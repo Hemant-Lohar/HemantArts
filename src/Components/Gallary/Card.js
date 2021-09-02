@@ -3,20 +3,21 @@ import React from 'react'
 const Card = ({CardData}) => {
     return (
         <>
-            <div className=" ">
-                <section className=" flex flex-row flex-wrap justify-around mx-40">
+            <div className="bg-gray-100 h-screen">
+                <section className="flex flex-row flex-wrap justify-around mx-40 pt-8">
                     {
                         CardData.map((curElem) => {
                             const {id, image, title} = curElem
                             return (
                                 <>
-                                <div className="imgBox mx-8 my-4" key={id}>
+                                <div className="imgBox bg-white m-4 h-full rounded-b-md shadow-md" key={id}>
                                     <div className="img">
-                                        <img className="w-48" src={image} alt="Image" />
+                                        <img className="w-48  rounded-md" src={image} alt="Image" />
+                                        <p className="py-2 ml-2 text-sm text-gray-500">
+                                        #{title}
+                                        </p>
                                     </div>
-                                    <p>
-                                        {title}
-                                    </p>
+                                    
                                 </div>
                                 </>
                             )

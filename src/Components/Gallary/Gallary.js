@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Card from './Card'
 import cards from './cardsapi'
 import Filterbar from './Filterbar'
+import Navbar from '../Navbar'
 
 const uniquelist = [
     ...new Set(
@@ -33,8 +34,9 @@ const Gallary = () => {
 
     return (
         <>
-           <Filterbar filterItem ={filterItem} list={list} />
-           <Card CardData={CardData} />
+            <Navbar />
+            <Filterbar filterItem ={filterItem} list={list} />
+            <Card CardData={CardData} />
         </>
     )
 }

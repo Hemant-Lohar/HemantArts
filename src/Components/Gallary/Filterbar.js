@@ -5,11 +5,11 @@ const Filterbar = ({filterItem, list}) => {
         <>
             
             <div>
-            <div className="btn-grp">
+            <div className="btn-grp flex justify-center ">
                 {
                     list.map((curElem) => {
                         return (
-                            <button key={curElem.id} className="p-8" onClick={() => filterItem(curElem)}>{curElem}</button>
+                            <button key={curElem.id} className="px-4 py-2 mx-8 my-4 border-b-2 hover:border-red-600 focus:border-red-600 focus:bg-gray-100 rounded-t-md text-gray-500 focus:text-gray-900 " onClick={() => filterItem(curElem)}>{curElem}</button>
                         )
                     })
 
