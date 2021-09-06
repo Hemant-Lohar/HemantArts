@@ -3,8 +3,8 @@ import React from 'react'
 const Card = ({CardData}) => {
     return (
         <>
-            <div className="bg-gray-100 h-screen">
-                <section className="flex flex-row flex-wrap justify-around mx-40 pt-8">
+            <div className="bg-gray-100 h-screen w-full">
+                <section className="flex flex-row flex-wrap justify-center mx-40 pt-8">
                     {
                         CardData.map((curElem) => {
                             const {id, image, title} = curElem
